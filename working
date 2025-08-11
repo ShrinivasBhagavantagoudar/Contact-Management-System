@@ -1,0 +1,46 @@
+1. Introduction
+This program implements a simple contact management system using a Binary Search Tree (BST) for storing contacts and Linked Lists for managing multiple phone numbers associated with each contact.
+2. Data Structures
+•	PhoneNumberNode: A linked list node structure that stores a single phone number and a pointer to the next phone number.
+•	ContactNode: A binary search tree node structure that stores a contact's name, a linked list of phone numbers, and two pointers (left and right) to represent the left and right children in the BST.
+3. Functions
+•	createPhoneNumberNode(char* phoneNumber):
+Creates a new phone number node with the given phone number and returns the node.
+•	createContactNode(char* name):
+Creates a new contact node with the given name and initializes its phone number list to NULL.
+•	insertContact(ContactNode* root, char* name):
+Inserts a new contact into the BST. The contacts are stored in alphabetical order, where names smaller than the root go to the left and larger names go to the right.
+•	searchContact(ContactNode* root, char* name):
+Searches for a contact by name in the BST. If the contact is found, it returns the node; otherwise, it returns NULL.
+•	addPhoneNumber(ContactNode* contact, char* phoneNumber):
+Adds a new phone number to a contact. A new phone number node is created and added to the front of the linked list.
+•	displayPhoneNumbers(PhoneNumberNode* phoneNumbers):
+Displays all the phone numbers associated with a contact by iterating through the linked list.
+•	displayContacts(ContactNode* root):
+Displays all contacts in alphabetical order (using in-order traversal of the BST). For each contact, it also displays the associated phone numbers.
+•	findMin(ContactNode* root):
+Finds the node with the smallest value (leftmost node) in the BST. This function is used when deleting a contact with two children.
+•	deleteContact(ContactNode* root, char* name):
+Deletes a contact by name from the BST. It handles three cases:
+o	The contact has no children (leaf node).
+o	The contact has one child.
+o	The contact has two children. In this case, the smallest node from the right subtree is used to replace the deleted contact.
+4. Main Function
+The main function provides a menu-driven interface for the user. The available options are:
+1.	Add Contact: Prompts the user to enter a contact name and inserts it into the BST.
+
+2.	Search Contact: Searches for a contact by name and displays the contact's details if found.
+
+3.	Display All Contacts: Displays all contacts in alphabetical order, along with their associated phone numbers.
+
+4.	Add Phone Number to Contact: Prompts the user to add a phone number to an existing contact.
+
+5.	Delete Contact: Deletes a contact by name from the BST.
+6.	Exit: Exits the program.
+
+
+5. Program Flow
+•	The user is presented with a menu where they can choose to add, search, display, or delete contacts, or add phone numbers to contacts.
+•	Each option triggers the corresponding function, which operates on the BST and linked lists to manage the contact information.
+•	The program continues running until the user selects the option to exit
+
