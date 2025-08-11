@@ -1,3 +1,21 @@
+# Contact Management System (C Project)
+
+This is a beginner-level project that demonstrates the use of **Binary Search Trees (BSTs)** and **Linked Lists** in C to manage contact information.
+
+## Features
+- Add new contacts
+- Search for contacts
+- Display all contacts alphabetically
+- Add multiple phone numbers per contact
+- Delete contacts
+
+## How to Run
+```bash
+gcc main.c -o cms
+./cms
+
+
+
 1. Add Contact
 2. Search Contact
 3. Display All Contacts
