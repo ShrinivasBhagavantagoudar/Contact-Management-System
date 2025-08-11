@@ -1,0 +1,32 @@
+Introduction: Contact Management System
+
+ Managing contact information is an essential task in both personal
+and professional contexts. A robust and efficient contact
+management system ensures that users can store, retrieve, and
+organize contact details seamlessly. This project, Contact
+Management System, is designed as a beginner-friendly
+implementation using two fundamental data structures: Binary
+Search Trees (BSTs) and Linked Lists.
+ The system aims to provide a structured way to store contact
+names and their associated phone numbers. Contacts are organized
+in a Binary Search Tree to ensure quick and efficient searching,
+insertion, and traversal. For each contact, a Linked List is used to
+manage multiple phone numbers, enabling flexibility in handling
+contacts with more than one number.
+ In this system:
+ Binary Search Tree (BST): Contacts are stored as nodes in a BST,
+sorted alphabetically by their names.
+ The tree structure ensures efficient insertion, search, and traversal of
+contacts, enabling quick access to the required data.
+ Linked List for Phone Numbers: Each contact node contains a
+linked list that stores all phone numbers associated with that
+contact.
+ This setup allows flexibility in handling contacts with multiple
+numbers while keeping memory usage efficient.
+
+Purpose:
+ The project introduces and demonstrates:
+ The practical application of Binary Search Trees for hierarchical
+data management.
+ The use of Linked Lists for managing variable-length data
+dynamically.
